@@ -19,7 +19,7 @@ if uploaded_file is not None:
         df = pd.read_excel(uploaded_file)
         
         st.write("Nama Kolom Excel:")
-        st.write(df.colums.tolist())
+        st.write(df.columns.tolist())
     
     st.subheader("1. Data Historis PO")
     st.dataframe(df.head(10)) # Menampilkan 10 baris pertama
