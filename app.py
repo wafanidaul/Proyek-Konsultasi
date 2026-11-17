@@ -22,7 +22,7 @@ if uploaded_file is not None:
         st.write(df.columns.tolist())
     
     st.subheader("1. Data Historis PO")
-    st.dataframe(df.head(10)) # Menampilkan 10 baris pertama
+    st.dataframe(df, use_container_width=True)
 
     # 3. Pengaturan Parameter di Sidebar (Panel Samping)
     st.sidebar.header("Pengaturan Peramalan")
